@@ -20,7 +20,7 @@ GPIO.setmode (GPIO.BCM)
 GPIO.setup (heaterPin, GPIO.OUT)
 GPIO.output (heaterPin, GPIO.LOW)
 
-LOGFILE = "thermoheater.log"
+LOGFILE = "/home/pi/ph/thermoheater.log"
 
 time_next_log = time.time()
 time_next_display = time.time()
