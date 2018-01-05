@@ -3,7 +3,7 @@ DIR=/home/pi/ph
 LOG=$DIR/thermoheater.log
 TMP=$DIR/thermoheater.tmp
 SAV=$DIR/thermoheater.logged
-RDY=$DIR/thermoheader.ready
+RDY=$DIR/thermoheater.ready
 UPL=david@ubmedia:data/thermoheater_`uname -n`_`date +%Y%m%d_%H%M%S`.log
 UPLOAD="scp"
 if [ -f $TMP ]; then rm -f $TMP; fi
