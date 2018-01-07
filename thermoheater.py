@@ -17,6 +17,7 @@ heaterMsg = 'OFF'
 sensor = W1ThermSensor()
 
 GPIO.setmode (GPIO.BCM)
+GPIO.setwarnings (False)
 GPIO.setup (heaterPin, GPIO.OUT)
 GPIO.output (heaterPin, GPIO.LOW)
 
