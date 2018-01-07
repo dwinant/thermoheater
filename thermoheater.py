@@ -50,7 +50,7 @@ while True:
 		# was on, reached off temp, so turn it off
 		heaterState = False
 		heaterMsg = 'OFF'
-		GPIO.ouput (heaterPin, GPIO.LOW)
+		GPIO.output (heaterPin, GPIO.LOW)
 		print ("%s Heater Turned Off" % (time.strftime ("%H:%M:%S")))
 	if temp_fahrenheit <= TEMP_ON and not heaterState:
 		# was off, reached on temp, so turn it on
